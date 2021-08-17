@@ -1,0 +1,14 @@
+Características para SEO
+
+--KEYWORDS--
+mobiliario
+médico
+ortopedia
+cordoba
+argentina
+
+--DESCRIPTION--
+Empresa Argentina de Mobiliario Médico y Productos Ortopédicos
+
+--TITTLES--
+Mantengo los mismos títulos generados en un principio, correlativos a la funcionalidad de cada página.

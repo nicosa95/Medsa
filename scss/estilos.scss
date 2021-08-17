@@ -1,0 +1,532 @@
+$main-color:#8c0303;
+$second-color:#eee9e3;
+$third-color:#8B8C81;
+$ancho:100%;
+$divisor-footer:3;
+
+
+*{
+    margin: 0px;
+    padding: 0px;
+    background-color: $second-color;
+    font-family: 'Quicksand', sans-serif;
+    font-weight: lighter;
+    }
+
+h1{
+    background-color: black;
+    text-align: center;
+    color:whitesmoke;
+}
+
+h1 a{
+    background-color: black;
+    text-decoration: none;
+    color:whitesmoke;
+    height: 200px;
+}
+h2{
+    font-size: 60px;
+    color: black;
+    font-weight: bolder;
+    background-image: linear-gradient(to left,  $third-color,$second-color);
+    text-align:end;
+    text-shadow: 1px 1px  #af7575;
+    padding-right: 50px;
+}
+
+p{
+    font-size: 40px;
+    justify-content: baseline;
+    margin-top: 100px;
+    margin-bottom: 100px;
+}
+
+h3{
+    background-image: linear-gradient(to left,#8c0303,#8f4141);
+    font-weight: lighter;
+    text-align: center;
+    font-size: 40px;
+    color: whitesmoke;
+}
+
+h4{
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+h6{
+    color: rgb(94, 4, 4);
+    background-color: antiquewhite;
+    font-size: 10px;
+    text-align: center;
+    border-radius:5px ;
+
+    margin:10px 10px;
+    }
+
+table{
+    margin: 50px;
+}
+th{
+    background-color:rgb(94, 4, 4);
+    color: whitesmoke;
+    font-weight: bolder;
+    font-size: 30px;
+    padding: 10px;
+}
+
+td{ 
+    background-color: whitesmoke;
+    font-size: 25px;
+    padding: 5px;
+    text-align: center;
+}
+
+footer{
+    border-top: #331111 solid;
+    margin-top: 10px;
+}
+
+#logoIndex {
+    width: 120px;
+    height: 120px;
+}
+/*Quiero hacer un menu de naav sticky*/ /*Consulta, cuando uso naav en vez de header en la propiedad no funciona, solo puedo hacer sticky al header, por que?*/
+header{
+    position: sticky;
+    top: 10px;
+}
+
+/*CÓDIGO naav*/
+.naav{
+    height: 100px;
+    z-index: 3;
+    
+}
+.naav_subnaav{
+    background-color:  $third-color;
+    height: 100px;
+}
+.naav ul li a{
+    text-decoration: none;
+    color: white;
+    font-size: 30px;;
+    background-color: #8c0303;
+    text-transform: uppercase;
+    
+}
+
+.naav ul li{
+    display: inline-block;
+    margin-right: 70px;
+    position: relative;
+    margin-top: 15px;
+}
+
+.naav ul{
+    background-color:  #8c0303;
+    text-align: center;
+    height: 70px;
+    justify-content:baseline;
+}
+/*Configura características de los subenlaces*/
+.naav .naav_subnaav li a{
+    background-color:  $third-color;
+    color: black;
+    font-size: larger;
+    margin-top: 10px;
+}
+
+.naav .naav_subnaav li{
+    /*width: 20vw;*/
+    background-color:  $third-color;
+    margin-bottom: 5px;
+    margin-right: 0px;
+    text-align: left;
+    margin-left: 7px;
+}
+/*EFECTO AL UBICAR EL CURSOSR*/
+.naav ul li:hover{
+    box-shadow: 0 0 10px #ee4d4d,
+                0 0 10px #e0a6a6;
+    border-radius: 5px;
+}
+ul ul {
+    position: absolute;
+    display: none;
+    background-color:  $third-color;
+}
+ul ul li{
+    display: block;
+    background-color:    $third-color
+}
+
+ul li:hover ul{
+    display:block;
+    background-color:  $third-color;
+}
+#calidadItem ul li{
+    font-size: 25px;
+    color:rgb(94, 4, 4);
+    font-weight: 700;
+}
+
+#calidadItem{
+    margin: 100px;
+    justify-content:space-around;
+}
+#calidadItem ul{
+    list-style: square inside url(../img/gears.png);
+}
+
+/*CONTACTO FORM*/
+#consultaForm{
+    width: 50%;
+    height: 500px;
+    padding: 15px;
+    border-color:  $third-color;
+    background-color:  $third-color;
+    margin-top: 40px;
+    margin-left: 25%;
+}
+
+#consultaForm label,select,input,legend{
+    background-color:  $third-color;
+}
+
+#tablePf{
+    background-color: rgb(94, 4, 4);
+    margin: 100px;
+}
+
+.productosnaav_menu{
+    width: 15%;
+    background-color:  $third-color;
+}
+
+.productosnaav_menu_productos{
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content:baseline;
+    align-content: space-around;
+}
+.productosnaav_menu_productos li{
+    padding: 15px;
+    background-color:  $third-color;
+    border: black;
+    font-size: 20px;
+    text-decoration: none;
+    font-weight:bolder;
+    color: whitesmoke;
+}
+
+.productosnaav_menu_productos li:hover{
+    background-color: #383834d3;    
+}
+.productosnaav {
+    display: flex;
+    flex-direction: row;
+    justify-content: baseline;
+    padding-top: 10px;
+    background-color: $third-color;
+}
+
+.productosnaav_grid{
+    width: 75%;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-content: space-around;
+}
+
+.productosnaav_grid div {
+    border-radius: 5px;
+    box-shadow: #331111;
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    text-align: center;
+}
+
+.productosnaav_grid p{
+    font-size: 25px;
+    color: #8c0303;
+    font-weight: bolder;
+}
+
+.productosnaav_grid a{
+    text-decoration: none;
+    color: black;
+}
+
+/*CÓDIGO DE FOOTER*/
+
+.footer{
+    display: flex;
+    flex-direction: column;
+}
+
+.footer_cont{
+    display: flex;
+    flex-direction: row;
+    justify-content:center;
+    margin-top: 20px;
+
+}
+
+.footer_cont div:lang(all){
+    align-content: center;
+}
+
+.footer_location{
+    display: flex;
+    flex-direction: column;
+}
+
+.logoRedes{
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+    margin-bottom: 10px;
+}
+
+.footer_cont_bloque_item a{
+    text-decoration: none;
+    color: black;
+    font-size: 20px;
+}
+
+.fotoProducto:hover{
+    transform: scale(1.05,1.05);
+}
+.calidadSection{
+    width: 100%;
+    height: 400px;
+}
+
+.calidadSection p{
+    font-size: 40px;
+    justify-content: baseline;
+    margin-top: 100px;
+}
+
+.footer_cont_bloque_item{
+    display: flex;
+    flex-direction: row;
+    padding: auto;
+}
+/*CÓDIGO DE FOOTER*/
+
+.nosotrosGrid{
+    display: grid;
+    grid-template-columns: 1fr,1fr;
+    grid-template-rows: 1fr, 1fr;
+    grid-column-gap: 25px;
+    grid-row-gap: 20px;
+    align-items: center;
+    justify-content: space-evenly;
+
+    grid-template-areas: 
+    "nosotrosGrid_imgMision Mision"
+    "Vision imgVision";
+}
+
+
+.nosotrosGrid div{
+    height: 750px;
+}
+.nosotrosGrid_imgMision{
+    grid-area: nosotrosGrid_imgMision;
+    overflow: hidden;
+}
+
+.nosotrosGrid_imgVision{
+    grid-area: imgVision;
+    overflow: hidden;
+}
+
+.nosotrosGrid_mision{
+    grid-area: Mision;
+}
+
+.nosotrosGrid_vision{
+    grid-area: Vision;
+}
+
+#form {
+    align-content: center;
+}
+
+#productosContacto{
+    font-size: 30px;
+    color: whitesmoke;
+    text-decoration: none;
+    background-image: linear-gradient(to left,#8c0303,#963c3c);
+    margin-left: 45%;
+}
+.contFormNosotros{
+    width: 500px;
+    margin-top: 100px;
+    margin-left: 35%;
+    background-color: rgb(94, 4, 4);
+    padding: 50px;
+    border-radius: 10px;
+}
+
+.contFormNosotros_formNosotros{
+    font-size: 25px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height: auto;
+    width: 500px;
+}
+
+.contFormNosotros_formNosotros label{
+    padding-bottom: 10px;
+    text-align:center;
+    color: silver;
+    font-weight: 700;
+    background-color: rgb(94, 4, 4);
+
+}
+.contFormNosotros_formNosotros input{
+    font-size: 25px;
+}
+
+.contFormNosotros_formNosotros select{
+    font-size: 25px;
+}
+/*INICIO CLASSES*/
+
+
+
+
+.contCert{
+    margin-top: 50px;
+    display: flex;
+    flex-direction: row;
+    
+    align-content: center;
+}
+.contCert_certificado{
+    margin: 50px;
+    width: 50%;
+}
+
+.contCert_certificado_img{
+    width:50%;
+}
+
+
+.logoCalidad{
+    width: 176px;
+    height:176px;
+    
+}
+
+.logoAnmat{
+    width: 300px;
+    height:176px;
+}
+
+.footer_cont_bloque{
+    border-right: #331111;
+    border-right: 1px solid;
+    width: 38%;
+    height:auto;
+    text-align: center;
+    padding-top: 1rem;
+    padding-left: 2rem;
+    padding-right: 2rem;
+}
+
+.formInput{
+    display: flex;
+    flex-direction: column;
+}
+
+.formInput input{
+    background-color:#e9dddd;
+    font-weight: 700;    
+}
+
+.formInput_boton{
+    background-color:#8c0303;
+    width: 20%;
+    align-self: center;
+    margin-top: 15px;
+}
+
+.formInput_label{
+    color:#8c0303 ;
+    font-weight: bold;
+}
+
+.formInput_legend{
+    background-color:#8c0303;
+    font-weight: bolder;
+    text-align: center;
+    font-size: 20px;
+    color: #e9dddd;
+}
+
+/* Media Queries*/
+@media only screen and (max-width:768px) {
+    .nosotrosGrid{
+        grid-template-columns: 1fr;
+        grid-column: 1fr;
+        
+    }
+    .nosotrosGrid div{
+        background-color: chocolate;
+    }
+}
+
+@media only screen and (max-width:480px) {
+    .nosortosGrid{
+        grid-column: 1fr;
+
+    }
+    .nosotrosGrid div{
+        background-color: cornflowerblue;
+    }
+}
+
+@for $i from 1 through 12{
+    .Padding-#{$i}{
+        padding: 16px / $i ;
+    }
+}
+
+$fondo-redes: facebook;
+.logoRedesSASS{
+    @if $fondo-redes == facebook {
+        background-color: blue;
+    }
+    @else if $fondo-redes == whatsapp{
+        background-color:green;
+    }
+    @else {
+        background-color:purple;
+    }
+    
+}
+
+@each $fondo-redes in {
+    #{$fondo-redes}-icon{
+        box-shadow: rgb(94, 4, 4);
+    }
+}
+
+$red-imgBack: (facebook:blue, whatsapp:green, instagram:purple);
+@each $color in $red-imgBack  {
+    .btn--#{red-imgBack}{
+        background-color :$color;
+    }
+}
+

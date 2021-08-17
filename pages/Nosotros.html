@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="keywords" content="mobiliario,medico,salud,ortopedia,argentina">
+    <meta name="description" content="Empresa Argentina de Mobiliario Médico y Productos Ortopédicos">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medsa | Nosotros</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;600&family=Zen+Tokyo+Zoo&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="../estilos/estilos.css">
+    <script src="https://kit.fontawesome.com/8726772d34.js" crossorigin="anonymous"></script>
+</head>
+<body>
+    <header>
+        <!--<a href="../index.html"><img src="../img/logo.jpg" id="logoIndex"></a>-->
+        <h1><a href="../index.html">MEDSA</a></h1>
+        <nav class="naav">
+            <ul>
+                <li><a href="../pages/Productos.html">Productos</a>
+                    <ul class="naav_subnaav">
+                        <li><a href="../pages/Productos.html">Ortopédia</a></li>
+                        <li><a href="../pages/Productos.html">Camas de Internación y Terapia</a></li>
+                        <li><a href="../pages/Productos.html">Clínicas y Kinésicas</a> </li>
+                        <li><a href="../pages/Productos.html">Sillas de Ruedas</a></li>
+                        <li><a href="../pages/Productos.html">Mobiliario Médico</a></li>
+                    </ul>
+                </li>
+                <li><a href="../pages/Anmat.html">Anmat</a></a></li>
+                <li><a href="../pages/Nosotros.html">Nosotros</a></li>
+                <li><a href="../pages/PreguntasFrecuentes.html">Preguntas Frecuentes</a></li>
+                <li><a href="../pages/Contactos.html">Contacto</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section> <!--Intro Empresarial-->
+            <iframe style="margin-left: 25%;" width="1200" height="630" src="https://www.youtube.com/embed/wQ2TN_gI3sE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+            <!--Carrousel simple con títulos claves si se ve necesario-->
+            <h2>25 años enfocándonos en la excelencia</h2>
+            <!--Bajo carrousel poner este artículo-->
+        </section>
+        <section> <!--Cuerpo Historia-->
+            <span>
+                <p>MEDSA SRL. la empresa se inició en forma familiar, hace aproximadamente veinte años, fabricando tan solo 2 tipos de productos, con el transcurso del tiempo, al incorporarse nuevas tecnologías, la empresa a llegado a contar con una lista de mas de 80 productos hospitalarios en donde su principal propósito es la fabricación y distribución de las mismas.
+                </p>
+                <p>
+                Tenemos la oportunidad de crecer, porque cuentamos con un equipo humano de gran experiencia y responsabilidad. En la actualidad las instalaciones de la fábrica tienen mas de 900 metros cuadrados de superficie cubierta.
+                </p>
+            </span>
+        </section>
+        <!--Aquí va dividido la sección de misión y visión, acompañada con una imágen lateral-->
+        <section class="nosotrosGrid">
+            <div class="nosotrosGrid_imgMision">
+                <img src="../img/equipo.jpg" alt="Misión">
+            </div>
+            <!--Coloco span ya que se mantiene en línea, la foto a la izquierda y los h3 con sus textos debajo a la derecha-->
+            <div class="nosotrosGrid_mision">
+                <h3>Misión</h3>
+                <p>Brindar a las empresas públicas y privadas del sector de la salud lo mejor en muebles hospitalarios con diseño de la más alta calidad, el cual se acomode a las necesidades de cada institución, ofreciendo satisfacción y comodidad al paciente y al equipo médico.
+                </p>
+            </div>
+            <div class="nosotrosGris_imgVision">
+                    <img src="../img/cohesion-equipo-1024x675.jpg" alt="Visión">
+            </div>
+            <div class="nosotrosGrid_vision">
+                <h3>Visión</h3>
+                <p>Ser la mejor empresa en el área de diseño y fabricación de muebles hospitalarios, ofreciendo calidad y respondiendo a los retos de productividad que exige el mercado y a la vez posicionarnos en un alto nivel competitivo. 
+                </p>
+            </div>
+        </section>
+        <!--Sección para la carga de CV--> 
+        <!--A futuro usar grids para separar el formulario con el mensaje-->
+        <section>
+            <h2>¡Formá parte de nuestro equipo!</h2>
+            <!--Formulario para cargar el CV-->
+            <div class="contFormNosotros">
+                <form action="https://formspree.io/f/moqylbpl" method="POST" clas="contFormNosotros_formNosotros">
+                    <label for="Nombre">Nombre Completo</label>
+                    <input type="text" name="Nombre" id="Nombre" placeholder="Ingresa tu Nombre">
+                    <label for="Correo">Correo Electrónico</label>
+                    <input type="text" name="_replyto" id="Correo" placeholder="Ingresa tu Correo">
+                    <label for="Tel">Teléfono de Contacto</label>
+                    <input type="text" name="Tel" id="Tel" placeholder="Ingresa tu Teléfono">
+                    <label for="Interes">Área de Interés</label>
+                    <select name="Interes" id="Interes">
+                        <option value="Herrería">Herrería</option>
+                        <option value="Pintura">Pintura</option>
+                        <option value="Armado">Armado</option>
+                        <option value="Administración">Administración y Financiera</option>
+                        <option value="Logística">Logística</option>
+                        <option value="Marketing">Marketing y Redes</option>
+                        <option value="Ingeniería">Ingeniería</option>
+                    </select>
+                    <label for="CV">Carga tu Cv</label>
+                    <input type="file" name="Cv" id="Cv">
+                </form>
+            </div>
+            <span>
+                <p>En Medsa somos concientes de lo importante de potenciar a nuestro equipo a lograr los mejores resultados en base a relaciones sólidas y la constante capacitación. Te invitamos a que formes parte de la familia Medsa y que logres tus objetivos junto a los nuestros. ¡Cargá tu CV!</p>
+            </span>
+        </section>
+    </main>
+    <footer class="footer">
+        <!--Coloco un div para seleccionar el área de los spans, cada uno de estos va al costado aunque entiendo poder usar un section-->
+        <section class="footer_cont">
+            <div class="footer_cont_bloque">
+                <h4>Encuentranos en nuestras redes</h4>
+                <div class="footer_cont_bloque_item">
+                    <img src="../img/faceLogo.png" class="logoRedes">
+                    <a href="facebook.com/Medsa">Medsa Medical Equipment</a>
+                </div>
+                <div class="footer_cont_bloque_item">
+                    <img src="../img/logoInsta.png" class="logoRedes">
+                <a href="instagram.com/medsasrl">@medsasrl</a>
+                </div>
+                <div class="footer_cont_bloque_item">
+                    <img src="../img/logoWpp.png" class="logoRedes">
+                    <a href="web.whatsapp.com/telefono">35153546846348</a>
+                </div>
+            </div>
+            <div class="footer_cont_bloque">
+                <img src="../img/anmathab.png" class="logoAnmat">
+                <h4>Certificación Anmat</h4>
+            </div>
+            <div class="footer_cont_bloque">
+                <img src="../img/iso.png" class="logoCalidad">
+                <h4>Certificación ISO 9001</h4>
+            </div>
+            <div class="footer_cont_bloque">
+                <div class="footer_cont_bloque_location">
+                    <h4>¿Donde estamos?</h4>
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3405.541973517727!2d-64.15863868431315!3d-31.399190602563436!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x943298044d963b2b%3A0x144d7730f91a30df!2sMedsa%20Srl!5e0!3m2!1ses-419!2sar!4v1625537901620!5m2!1ses-419!2sar" width="100%" height="250" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+                    <div class="footer_cont_bloque_item">
+                        <img src="../img/telLogo.png" class="logoRedes">
+                        <a>+35456548654</a>
+                    </div>
+                    <div class="footer_cont_bloque_item">
+                        <img src="../img/logoUbi.png" class="logoRedes">
+                        <a>Calle wallaby 42 sidney</a>
+                    </div>
+                    <div class="footer_cont_bloque_item">
+                        <img src="../img/logoMail.png" class="logoRedes">
+                        <a>info@medsa.com</a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!--No se si puedo hacer vincular directamente a un mailto o algo así-->
+        <section>
+            <h6>Designed by Nicolás Sanchez Acosta | 2021</h6>
+        </section>
+    </footer>
+</body>
+</html>
