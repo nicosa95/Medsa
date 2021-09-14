@@ -51,84 +51,6 @@ h6 {
   border-radius: 5px;
   margin: 10px 10px; }
 
-table {
-  margin: 50px; }
-
-th {
-  background-color: #5e0404;
-  color: whitesmoke;
-  font-weight: bolder;
-  font-size: 30px;
-  padding: 10px; }
-
-td {
-  background-color: whitesmoke;
-  font-size: 25px;
-  padding: 5px;
-  text-align: center; }
-
-footer {
-  border-top: #331111 solid;
-  margin-top: 10px; }
-
-#logoIndex {
-  width: 120px;
-  height: 120px; }
-
-/*Quiero hacer un menu de naav sticky*/
-/*Consulta, cuando uso naav en vez de header en la propiedad no funciona, solo puedo hacer sticky al header, por que?*/
-header {
-  position: sticky;
-  top: 10px; }
-
-/*CÓDIGO naav*/
-.naav {
-  height: 100px;
-  z-index: 3; }
-
-.naav_subnaav {
-  background-color: #8B8C81;
-  height: 100px; }
-
-.naav ul li a {
-  text-decoration: none;
-  color: white;
-  font-size: 30px;
-  background-color: #8c0303;
-  text-transform: uppercase; }
-
-.naav ul li {
-  display: inline-block;
-  margin-right: 70px;
-  position: relative;
-  margin-top: 15px; }
-
-.naav ul {
-  background-color: #8c0303;
-  text-align: center;
-  height: 70px;
-  justify-content: baseline; }
-
-/*Configura características de los subenlaces*/
-.naav .naav_subnaav li a {
-  background-color: #8B8C81;
-  color: black;
-  font-size: larger;
-  margin-top: 10px; }
-
-.naav .naav_subnaav li {
-  /*width: 20vw;*/
-  background-color: #8B8C81;
-  margin-bottom: 5px;
-  margin-right: 0px;
-  text-align: left;
-  margin-left: 7px; }
-
-/*EFECTO AL UBICAR EL CURSOSR*/
-.naav ul li:hover {
-  box-shadow: 0 0 10px #ee4d4d, 0 0 10px #e0a6a6;
-  border-radius: 5px; }
-
 ul ul {
   position: absolute;
   display: none;
@@ -142,6 +64,7 @@ ul li:hover ul {
   display: block;
   background-color: #8B8C81; }
 
+/*hasta aca*/
 #calidadItem ul li {
   font-size: 25px;
   color: #5e0404;
@@ -157,9 +80,10 @@ ul li:hover ul {
 /*CONTACTO FORM*/
 #consultaForm {
   width: 50%;
-  height: 500px;
+  height: 600px;
   padding: 15px;
   border-color: #8B8C81;
+  border-radius: 2%;
   background-color: #8B8C81;
   margin-top: 40px;
   margin-left: 25%; }
@@ -171,93 +95,11 @@ ul li:hover ul {
   background-color: #5e0404;
   margin: 100px; }
 
-.productosnaav_menu {
-  width: 15%;
-  background-color: #8B8C81; }
-
-.productosnaav_menu_productos {
-  margin: 10px;
-  display: flex;
-  flex-direction: column;
-  justify-content: baseline;
-  align-content: space-around; }
-
-.productosnaav_menu_productos li {
-  padding: 15px;
-  background-color: #8B8C81;
-  border: black;
-  font-size: 20px;
-  text-decoration: none;
-  font-weight: bolder;
-  color: whitesmoke; }
-
-.productosnaav_menu_productos li:hover {
-  background-color: #383834d3; }
-
-.productosnaav {
-  display: flex;
-  flex-direction: row;
-  justify-content: baseline;
-  padding-top: 10px;
-  background-color: #8B8C81; }
-
-.productosnaav_grid {
-  width: 75%;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  justify-content: space-between;
-  align-content: space-around; }
-
-.productosnaav_grid div {
-  border-radius: 5px;
-  box-shadow: #331111;
-  margin: 30px;
-  display: flex;
-  flex-direction: column;
-  align-content: center;
-  text-align: center; }
-
-.productosnaav_grid p {
-  font-size: 25px;
-  color: #8c0303;
-  font-weight: bolder; }
-
-.productosnaav_grid a {
-  text-decoration: none;
-  color: black; }
-
-/*CÓDIGO DE FOOTER*/
-.footer {
-  display: flex;
-  flex-direction: column; }
-
-.footer_cont {
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  margin-top: 20px; }
-
-.footer_cont div:lang(all) {
-  align-content: center; }
-
-.footer_location {
-  display: flex;
-  flex-direction: column; }
-
 .logoRedes {
   width: 30px;
   height: 30px;
   margin-right: 10px;
   margin-bottom: 10px; }
-
-.footer_cont_bloque_item a {
-  text-decoration: none;
-  color: black;
-  font-size: 20px; }
-
-.fotoProducto:hover {
-  transform: scale(1.05, 1.05); }
 
 .calidadSection {
   width: 100%;
@@ -267,39 +109,6 @@ ul li:hover ul {
   font-size: 40px;
   justify-content: baseline;
   margin-top: 100px; }
-
-.footer_cont_bloque_item {
-  display: flex;
-  flex-direction: row;
-  padding: auto; }
-
-/*CÓDIGO DE FOOTER*/
-.nosotrosGrid {
-  display: grid;
-  grid-template-columns: 1fr,1fr;
-  grid-template-rows: 1fr, 1fr;
-  grid-column-gap: 25px;
-  grid-row-gap: 20px;
-  align-items: center;
-  justify-content: space-evenly;
-  grid-template-areas: "nosotrosGrid_imgMision Mision" "Vision imgVision"; }
-
-.nosotrosGrid div {
-  height: 750px; }
-
-.nosotrosGrid_imgMision {
-  grid-area: nosotrosGrid_imgMision;
-  overflow: hidden; }
-
-.nosotrosGrid_imgVision {
-  grid-area: imgVision;
-  overflow: hidden; }
-
-.nosotrosGrid_mision {
-  grid-area: Mision; }
-
-.nosotrosGrid_vision {
-  grid-area: Vision; }
 
 #form {
   align-content: center; }
@@ -313,32 +122,14 @@ ul li:hover ul {
 
 .contFormNosotros {
   width: 500px;
+  height: 500px;
   margin-top: 100px;
-  margin-left: 35%;
   background-color: #5e0404;
   padding: 50px;
   border-radius: 10px; }
 
-.contFormNosotros_formNosotros {
-  font-size: 25px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  height: auto;
-  width: 500px; }
-
-.contFormNosotros_formNosotros label {
-  padding-bottom: 10px;
-  text-align: center;
-  color: silver;
-  font-weight: 700;
+.estiloFormNosotros {
   background-color: #5e0404; }
-
-.contFormNosotros_formNosotros input {
-  font-size: 25px; }
-
-.contFormNosotros_formNosotros select {
-  font-size: 25px; }
 
 /*INICIO CLASSES*/
 .contCert {
@@ -397,64 +188,21 @@ ul li:hover ul {
   font-size: 20px;
   color: #e9dddd; }
 
-/* Media Queries*/
-@media only screen and (max-width: 768px) {
-  .nosotrosGrid {
-    grid-template-columns: 1fr;
-    grid-column: 1fr; }
-  .nosotrosGrid div {
-    background-color: chocolate; } }
+/*CÓdigo para arreglar Bootstrap*/
+.navbar {
+  z-index: 100; }
 
-@media only screen and (max-width: 480px) {
-  .nosortosGrid {
-    grid-column: 1fr; }
-  .nosotrosGrid div {
-    background-color: cornflowerblue; } }
+a:active {
+  background-color: black; }
 
-.Padding-1 {
-  padding: 16px; }
+.no-bg {
+  background-color: transparent; }
 
-.Padding-2 {
-  padding: 8px; }
+.bg-main {
+  background-color: #8B8C81; }
 
-.Padding-3 {
-  padding: 5.33333px; }
+.bg-main2 {
+  background-color: #8c0303; }
 
-.Padding-4 {
-  padding: 4px; }
-
-.Padding-5 {
-  padding: 3.2px; }
-
-.Padding-6 {
-  padding: 2.66667px; }
-
-.Padding-7 {
-  padding: 2.28571px; }
-
-.Padding-8 {
-  padding: 2px; }
-
-.Padding-9 {
-  padding: 1.77778px; }
-
-.Padding-10 {
-  padding: 1.6px; }
-
-.Padding-11 {
-  padding: 1.45455px; }
-
-.Padding-12 {
-  padding: 1.33333px; }
-
-.logoRedesSASS {
-  background-color: blue; }
-
-.btn--red-imgBack {
-  background-color: facebook blue; }
-
-.btn--red-imgBack {
-  background-color: whatsapp green; }
-
-.btn--red-imgBack {
-  background-color: instagram purple; }
+.fnt-light {
+  color: whitesmoke; }
